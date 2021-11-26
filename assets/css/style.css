@@ -1,0 +1,147 @@
+*,
+*::before, /* for quiz */
+*::after { /* for quiz */
+  box-sizing: border-box;
+}
+  
+  body {
+    font-family: Arial;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: flex-start;
+    flex-wrap:wrap;
+  }
+  
+
+  label, p { /* quiz box */
+    font-size: 30px;
+  }
+  
+  input { /* quiz box */
+    height: 50px;
+    width: 100%;
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 2em;
+    border: 1px solid #001b44;
+  }
+
+  header {
+    padding: 40px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+  }
+  
+  
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /*justify-content: space-around;*/
+  }
+  
+  section {    
+    background-color: #fff;
+    padding: 20px;
+    /*border: solid black; */   
+  }
+  
+
+  .button {
+    background-color:crimson; /* Green */
+    border: none;
+    color: white;    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    padding: 15px 32px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+
+  h1 { /* quiz box */
+    text-align: center;
+  }
+  
+  ul { /* quiz box */
+    list-style-type: none;
+    padding: 0;
+    background-color: white;
+  }
+  
+  li { /* quiz box */
+    height: 50px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color:  #001b44;
+    color: white;
+    font-size: 1.5em;
+    line-height: 1.5;
+    cursor:pointer;
+  }
+  
+  li:before { /* quiz box */
+    content: "\200B";
+    position: absolute;
+  }
+  
+  li::after { /* quiz box */
+    content: " ";
+    display: block;
+    clear: both;
+  }
+  
+  li button { /* quiz box */
+    float: right;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    background-color: #ff7034;
+    color: white;
+    font-size: 1em;
+  }
+  
+  .card { /* quiz box */
+    display: block;
+    background-color:	#FFFFE0;
+    border: 1px solid #eceff1;
+    border-radius: 8px;
+    box-shadow: rgba(60, 64, 67, 2) 0 1px 2px 0,
+      rgba(60, 64, 67, 0.15) 0 2px 4px 3px;
+    margin: 60px auto;
+    padding: 20px;
+    width: 80vw;
+  }
+
+
+
+  footer {
+    flex-shrink: 0;
+    padding: 20px;
+    text-align: center;
+    background: #13293d;
+    color: #fff;
+    margin-top: auto;
+  }
+    
+  
+  @media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+    header {
+     /* background: #772014;*/
+    }
+    
+    footer {
+      /* background-color: #bb8588; */
+    }
+  }
+  

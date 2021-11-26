@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  
+  <title>Code Quiz</title>
+</head>
+
+<body>
+    
+    <header>
+        <h1 >Code Quiz</h1>
+        <span id="time"></span>
+        <!-- <p>Here are different ways we can transform boxes!</p> -->
+    </header>
+   
+    <main style="padding: 20px; border:solid black; margin:10px;">
+        
+        <section id="questions-Section">            
+            <div id="question-Card" class="card"> 
+                <h1>Coding Quiz Challenge</h1>                             
+                <p style="text-align: center;"><span>Try to answer the next code-mixed questions within the time limit. Keep in mind that incorrect answers will penalize your scoretime by 5 seconds</span></p> 
+                <input class="button" type="button" value="Begin the Quiz" onclick="beginQuiz();">                   
+            </div>
+            
+        </section>
+
+        <section id="allDone-Section" style="display:none;">            
+            <div id="question-Card" class="card"> 
+                <h1>All done</h1>                             
+                <p style="text-align: center;"><span id="final-Score">Your final score is: </span></p>
+                <label for="initials-Name">Enter initials:</label><br><input type="text" id="initials-Name" name="initials-Name">
+                <input style="margin-top:20px;" id="submit-Button" class="button" type="button" value="Submit" onclick="">                   
+            </div>
+            
+        </section>
+
+        <section id="highScore-Section" style="display:none;">            
+            <div id="question-Card" class="card"> 
+                <h1>HighScores</h1>                             
+                <ul>
+                    <li>1. Something</li>
+                    <li>2. Someone</li>
+                </ul>                   
+            </div>
+            <input class="button" type="button" value="Go Back" onclick="goBack();">
+            <input class="button" type="button" value="Clear HighScores" onclick="clearHighScores();">
+        </section>
+
+
+        <section style="text-align: center; background-color: beige; border-top: solid black;">
+           <span id="answer-Result"></span>
+        </section>
+    </main>
+
+    <footer>
+        <h3>
+          Homework Chapter 4
+        </h3>
+      </footer>
+      
+      <script src="./assets/src/script.js"></script>
+</body>
+</html>
